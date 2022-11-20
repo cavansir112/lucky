@@ -1,0 +1,122 @@
+let data = [{
+
+        type: "Ofis ləvazimatları",
+        name: "Pozan “Maped” M-1037",
+        id: 0,
+        color: "-",
+        cost: 0.80 ,
+        img: "https://www.los.az/public/Products/166263002280badf30a2129bc0a72a68f34fffa39c.jpg"
+
+    },
+
+    {
+        type: "Ofis ləvazimatları",
+        name: "Qələm 'Gigis' 9684",
+        cost: 0.40 ,
+        id: 1,
+        color: "-",
+        img: "https://www.los.az/public/Products/1636102439dwGqfsr0N4IbHr9RYvefNoUJB5mWNiAQdKCE1aPo.png"
+
+    },
+
+    {
+        type: "Ofis ləvazimatları",
+        name: "Texmarker 'Maped' 4-lü",
+        cost: 3.70 ,
+        id: 2,
+        color: "-",
+        img: "https://www.los.az/public/Products/1628068596540540504504540540504.jpg"
+
+    },
+
+    {
+        type: "Ofis ləvazimatları",
+        name: "Stepler 'Maped' 710",
+        cost: 4.50 ,
+        id: 3,
+        color: "-",
+        img: "https://www.los.az/public/Products/1624262567f85defb733f109b918be5b6ed38569c6_xl.jpg",
+
+    },
+
+
+    {
+        type: "Qida və İçkilər",
+        cost: 5.05 ,
+        name: "Konfet 'Konti' qarağat 500qr",
+        id: 4,
+        color: "-",
+        img: "https://www.los.az/public/Products/165702416906a108ef3f27d6d96ee8962bed5350e3.jpg"
+
+    },
+
+    {
+        type: "Qida və İçkilər",
+        cost: 5.10 ,
+        name: "Qəhvə 'Jardin' Latte 8əd",
+        id: 5,
+        color: "-",
+        img: "https://www.los.az/public/Products/1657023811full_instant-coffee-Jardin-Latte_8x18g.jpg",
+
+    },
+
+    {
+        type: "Qida və İçkilər",
+        id: 6,
+        cost: 2.75 ,
+        name: "Brownie Adicto Gold 180qr",
+        color: "-",
+        img: "https://www.los.az/public/Products/1619521468311.png",
+
+    },
+
+    {
+        type: "Qida və İçkilər",
+        cost: 11.70 ,
+        name: "Çay 'Cihan' Seylon 500qr",
+        id: 7,
+        color: "-",
+        img: "https://www.los.az/public/Products/161867240642.jpg"
+
+    },
+
+    {
+        type: "new",
+        cost: 0.26 ,
+        name: "Qəhvə `Maccoffee` 3v1 1əd",
+        id: 8,
+        color: "-",
+        img: "https://www.los.az/public/Products/1660718393142533-98b9abb4ac3648f97cd5c6337c03d105.jpg"
+
+    },
+
+    {
+        type: "new",
+        cost: 0.39 ,
+        name: "Qələm 0.5mm 'Pensan' 2221",
+        id: 9,
+        color: "-",
+        img: "https://www.los.az/public/Products/1657694989140654.jpg"
+
+    },
+
+    {
+        type: "new",
+        cost: 0.90,
+        name: "Textmarker 'Maped' açıq rənglər 1əd",
+        id: 10,
+        color: "-",
+        img: "https://www.los.az/public/Products/166661297326526.jpg"
+
+    },
+
+    {
+        type: "new",
+        cost: 0.99 ,
+        name: "Salfet 'Soft' 50əd (qutu)",
+        id: 11,
+        color: "-",
+        img: "https://www.los.az/public/Products/1666172625PhotoRoom-20221018_123426.png"
+
+    },
+]

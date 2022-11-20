@@ -1,0 +1,812 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Lucky | Şəxsi kabinent</title>
+        <link rel="shortcut icon" href="https://los.az/faviconn/android-chrome-512x512.png" type="image/x-icon">
+        <link rel="icon" href="https://los.az/faviconn/android-chrome-512x512.png" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/posts.json"></script>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    </head>
+    <body>
+        <div class="component">
+            <div class="header ">
+                <img class="heder-img-laft" src="img/leaf-header-1.png" alt="">
+                <div class="container">
+                    <div class="navbar">
+                        <div class="logo-mobile w-100">
+                            <img src="img/logo-header.svg" alt="">
+                        </div>
+                        <div class="navbar-logo w-100 d-flex align-items-center justify-content-between mt-4">
+                            <i id="mdIcons" class="fa fa-bars"></i>
+                            <i id="removeMenu" class="fa fa-times "></i>
+                            <img class="lg-logo-img" src="img/logo-header.svg" alt="">
+                            <div class="navbar-input">
+                                <input placeholder="Axtar" type="text">
+                                <i id="navSearch" class="fa fa-search search"></i>
+                            </div>
+                            <div class="navbar-icon">
+                                <a href="">
+                                    <i class="fa fa-user-alt mr-2"></i> 
+                                </a>
+                                <a href="">
+                                    <img src="https://www.los.az/lucky/images/general/cart.svg" alt="">
+                                    <div class="icon-number">0</div>
+                                </a>
+                                <a href="">
+                                    <img src="https://www.los.az/lucky/images/general/heart.svg" alt="">
+                                    <div class="icon-number-like">0</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12  nav-menu-mobile py-3">
+                        <div class="navbar-input">
+                            <input placeholder="Axtar" type="text">
+                            <i id="navSearch" class="fa fa-search search"></i>
+                        </div>
+                        <ul class="position-relative pl-0 text-center">
+                            <li><a href="">Haqqımızda
+                                    <div class="border-div"></div>
+                                </a>  
+                            </li>
+                            <li><a href="">Yeni
+                                    <div class="border-div"></div>
+                                </a>
+                            </li>
+                            <li><a href="">Endirimlər
+                                    <div class="border-div"></div>
+                                </a>
+                            </li>
+                            <li><a href="">Ən çox satılanlar
+                                    <div class="border-div"></div>
+                                </a>
+                            </li>
+                            <li class="d-flex justify-content-center align-items-center"><a id="buttonLi" href="">Şərtlər 
+                                    <div class="border-div"></div>
+                                </a>
+                                <i id="chevronBottom" class="fa fa-chevron-right ml-3"></i>
+                            </li>
+
+                            <ul class="showUl-mobile p-0">
+                                <li><a href="">Çatdırılma
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                                <li><a href="">Geri qaytarma və dəyişdirmə
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                            <li><a href="">Əlaqə
+                                    <div class="border-div"></div>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="navbar-menu  w-100 d-flex flex-wrap mt-2">
+                    <div class="container  navbar-nav">
+                        <div class="catagiry-menu-mob col-12">
+                            <div class="catagoriy-menu">
+                                <h5><img class=" mb-1" src="https://www.los.az/lucky/images/icon/category.svg" alt="">
+                                    Kataqoriyalar
+                                </h5>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-12 katogoriy ">
+                            <div class="catagoriy-menu">
+                                <h5><img class=" mb-1" src="https://www.los.az/lucky/images/icon/category.svg" alt="">
+                                    Kataqoriyalar</h5>
+
+                                    <div class="container d-flex">
+                                        
+                                        <div class="catalog-ul  ">
+                                            <ul>
+                                                <li class="office-list"><div class="d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617785889ofis-levezimatlari.svg" alt="Ofis ləvazimatları"><a href="">Ofis ləvazimatları</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list ">
+                                                        <ul>
+                                                            <li><a href="">Ağardıcı</a></li>
+                                                            <li><a href="">Çərçivə</a></li>
+                                                            <li><a href="">Kağız</a></li>
+                                                            <li><a href="">Marker</a></li>
+                                                            <li><a href="">Qayçı </a></li>
+                                                            <li><a href="">Qovluq</a></li>
+                                                            <li><a href="">Skripka</a></li>
+                                                            <li><a href="">Yazı lövhəsi</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Bıçaq</a></li>
+                                                            <li><a href="">Bloknot</a></li>
+                                                            <li><a href="">Pul Rezini</a></li>
+                                                            <li><a href="">Çərçivə</a></li>
+                                                            <li><a href="">Delgəc</a></li>
+                                                            <li><a href="">Dəftər</a></li>
+                                                            <li><a href="">Kağız</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Kalkulyator</a></li>
+                                                            <li><a href="">Qayçı</a></li>
+                                                            <li><a href="">Qeyd Kağızı</a></li>
+                                                            <li><a href="">Qələm</a></li>
+                                                            <li><a href="">Qısqac</a></li>
+                                                            <li><a href="">Qovluq</a></li>
+                                                            <li><a href="">Sənəd Dolabı</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Sənəd Rəfi</a></li>
+                                                            <li><a href="">Skoç</a></li>
+                                                            <li><a href="">Skrepka</a></li>
+                                                            <li><a href="">Stepler və ehtiyatları</a></li>
+                                                            <li><a href="">Xətkeş</a></li>
+                                                            <li><a href="">Yapışqan</a></li>
+                                                            <li><a href="">Zibil Qabı</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list2"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786311qida.png" alt="Qida və İçkilər"><a href="">Qida və içkilər</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list2 ">
+                                                        <ul>
+                                                            <li><a href="">Çay</a></li>
+                                                            <li><a href="">Ədviyyat</a></li>
+                                                            <li><a href="">Qəhvə</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Qənd</a></li>
+                                                            <li><a href="">Quru meyvə</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Şirniyyat</a></li>
+                                                            <li><a href="">Soyuq İçkilər</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Süd</a></li>
+                                                            <li><a href="">Un məhsulları</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list3" ><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786118xirdavat.png" alt="Təsərrüfat malları"><a href="">Təsarrüfat malları</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div  class="catolog-list3 ">
+                                                        <ul>
+                                                            <li><a href="">Birdəfəlik qablar</a></li>
+                                                            <li><a href="">Əlcək</a></li>
+                                                            <li><a href="">Hava təravətləndirici</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Mətbəx levazimatlari</a></li>
+                                                            <li><a href="">Sabun</a></li>
+                                                            <li><a href="">Salfetlər</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Təmizlik Vasitələri</a></li>
+                                                            <li><a href="">Tibbi ləvazimatlar</a></li>
+                                                            <li><a href="">Tualet kağızı</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Xırdavat</a></li>
+                                                            <li><a href="">Zibil Paketi</a></li>
+                                                            <li><a href="">Mətbəx Dəsmalı</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list4"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786259computer-accessories-512.webp" alt="Elektron avadanlıq"><a href="">Elektron avadanlıqlar</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list4 ">
+                                                        <ul>
+                                                            <li><a href="">Batareyalar</a></li>
+                                                            <li><a href="">Kartric</a></li>
+                                                            <li><a href="">Klaviatura</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Kompyuter üçün çanta</a></li>
+                                                            <li><a href="">Modem</a></li>
+                                                            <li><a href="">Mouse</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Power Bank</a></li>
+                                                            <li><a href="">Printer</a></li>
+                                                            <li><a href="">Telefon</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Təmizləyicilər</a></li>
+                                                            <li><a href="">Uzadıcı</a></li>
+                                                            <li><a href="">Yaddaş kart</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list5"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/16468163995165161.png" alt="Dibçək gülləri"><a href="">Dibçək gülləri</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list5 ">
+                                                        <ul>
+                                                            <li><a href="">Aksesuarlar</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Otaq gülləri</a></li>
+                                                        </ul>
+                                                        <ul>
+
+                                                        </ul>
+                                                        <ul>
+
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list6"> <div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1618572764fbdfbdf.jpg" alt="Hədiyyəlik"><a href="">Hədiyyəlik</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list6 ">
+                                                        <ul>
+                                                            <li><a href="">Cüzdan</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Masaüstü dəstləri</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                        </ul>
+                                                        <ul>
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                                <li class="office-list7"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/162151268599956.png" alt="Coffee shop"><a href="">Coffee shop</a></div>
+                                                    <div class="border-div1"></div>
+                                                    <div class="catolog-list7 ">
+                                                        <ul>
+                                                            <li><a href="">Mondo</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Qəhvə bişirənlər</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <li><a href="">Qəhvə kapsullar</a></li>
+                                                        </ul>
+                                                        <ul>
+                                        
+                                                        </ul>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        
+                                    </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-8  nav-menu py-3">
+                            <ul class="d-flex">
+                                <li><a href="">Haqqımızda
+                                        <div class="border-div"></div>
+                                    </a>  
+                                </li>
+                                <li><a href="">Yeni
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                                <li><a href="">Endirimlər
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                                <li><a href="">Ən çox satılanlar
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                                <li><a id="buttonLi" href="">Şərtlər <i id="chevronBottom" class="fa fa-chevron-right "></i>
+                                        <div class="border-div"></div>
+                                        <ul class="showUl">
+                                            <li>Çatdırılma
+                                                <div class="border-div1"></div>
+                                            </li>
+                                            <li>Geri qaytarma <br> və dəyişdirmə
+                                                <div class="border-div1"></div>
+                                            </li>
+                                        </ul>
+                                    </a>
+                                </li>
+                                <li><a href="">Əlaqə
+                                        <div class="border-div"></div>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="catalog-list-mobile">
+                    <ul>
+                        <li><a href="">Ofis ləvazimatları <div class="border-div1"></div></a><i id="btnicon0" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl0" class="list-mobile-ul">
+                            <li><a href="">Ağardıcı</a></li>
+                            <li><a href="">Çərçivə</a></li>
+                            <li><a href="">Kağız</a></li>
+                            <li><a href="">Marker</a></li>
+                            <li><a href="">Qayçı </a></li>
+                            <li><a href="">Qovluq</a></li>
+                            <li><a href="">Skripka</a></li>
+                            <li><a href="">Yazı lövhəsi</a></li>
+                            <li><a href="">Bıçaq</a></li>
+                            <li><a href="">Bloknot</a></li>
+                            <li><a href="">Pul Rezini</a></li>
+                            <li><a href="">Çərçivə</a></li>
+                            <li><a href="">Delgəc</a></li>
+                            <li><a href="">Dəftər</a></li>
+                            <li><a href="">Kağız</a></li>
+                            <li><a href="">Kalkulyator</a></li>
+                            <li><a href="">Qayçı</a></li>
+                            <li><a href="">Qeyd Kağızı</a></li>
+                            <li><a href="">Qələm</a></li>
+                            <li><a href="">Qısqac</a></li>
+                            <li><a href="">Qovluq</a></li>
+                            <li><a href="">Sənəd Dolabı</a></li>
+                        </ul>
+                        <li><a href="">Qida və içkilər <div class="border-div1"></div></a><i id="btnicon1" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl1" class="list-mobile-ul">
+                            <li><a href="">Çay</a></li>
+                            <li><a href="">Ədviyyat</a></li>
+                            <li><a href="">Qəhvə</a></li>
+                            <li><a href="">Qənd</a></li>
+                            <li><a href="">Quru meyvə</a></li>
+                            <li><a href="">Şirniyyat</a></li>
+                            <li><a href="">Soyuq İçkilər</a></li>
+                            <li><a href="">Süd</a></li>
+                            <li><a href="">Un məhsulları</a></li>
+                        </ul>
+                        <li><a href="">Təsarrüfat malları <div class="border-div1"></div></a><i id="btnicon2" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl2" class="list-mobile-ul">
+                            <li><a href="">Birdəfəlik qablar</a></li>
+                            <li><a href="">Əlcək</a></li>
+                            <li><a href="">Hava təravətləndirici</a></li>
+                            <li><a href="">Mətbəx levazimatlari</a></li>
+                            <li><a href="">Sabun</a></li>
+                            <li><a href="">Salfetlər</a></li>            
+                            <li><a href="">Təmizlik Vasitələri</a></li>
+                            <li><a href="">Tibbi ləvazimatlar</a></li>
+                            <li><a href="">Tualet kağızı</a></li>
+                            <li><a href="">Xırdavat</a></li>
+                            <li><a href="">Zibil Paketi</a></li>
+                            <li><a href="">Mətbəx Dəsmalı</a></li>
+                        </ul>
+                        <li><a href="">Elektron avadanlıqlar <div class="border-div1"></div></a><i id="btnicon3" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl3" class="list-mobile-ul">
+                            <li><a href="">Batareyalar</a></li>
+                            <li><a href="">Kartric</a></li>
+                            <li><a href="">Klaviatura</a></li>
+                            <li><a href="">Kompyuter üçün çanta</a></li>
+                            <li><a href="">Modem</a></li>
+                            <li><a href="">Mouse</a></li>
+                            <li><a href="">Power Bank</a></li>
+                            <li><a href="">Printer</a></li>
+                            <li><a href="">Telefon</a></li>
+                            <li><a href="">Təmizləyicilər</a></li>
+                            <li><a href="">Uzadıcı</a></li>
+                            <li><a href="">Yaddaş kart</a></li>
+                        </ul>
+                        <li><a href="">Dibçək gülləri <div class="border-div1"></div></a><i id="btnicon4" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl4" class="list-mobile-ul">
+                            <li><a href="">Aksesuarlar</a></li>
+                            <li><a href="">Otaq gülləri</a></li>
+                        </ul>
+                        <li><a href="">Hədiyyəlik <div class="border-div1"></div></a><i id="btnicon5" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl5" class="list-mobile-ul">                       
+                            <li><a href="">Cüzdan</a></li>
+                            <li><a href="">Masaüstü dəstləri</a></li>
+                        </ul>
+                        <li><a href="">Coffee shop <div class="border-div1"></div></a><i id="btnicon6" class="fa fa-chevron-right icon-mobile"></i></li>
+                        <ul id="listUl6" class="list-mobile-ul">
+                            <li><a href="">Mondo</a></li>
+                            <li><a href="">Qəhvə bişirənlər</a></li>
+                            <li><a href="">Qəhvə kapsullar</a></li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+            <div id="navMenu" class="navbar-menu nav-menu-top  w-100 ">
+                <div class="container  navbar-nav">
+                    <div class="col-4 katogoriy ">
+                        <div class="catagoriy-menu">
+                            <h5><img class=" mb-1" src="https://www.los.az/lucky/images/icon/category.svg" alt="">
+                                Kataqoriyalar</h5>
+
+                                       <div class="container d-flex">
+                                    <div class="catalog-ul  ">
+                                        <ul>
+                                            <li class="office-list"><div class="d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617785889ofis-levezimatlari.svg" alt="Ofis ləvazimatları"><a href="">Ofis ləvazimatları</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list ">
+                                                    <ul>
+                                                        <li><a href="">Ağardıcı</a></li>
+                                                        <li><a href="">Çərçivə</a></li>
+                                                        <li><a href="">Kağız</a></li>
+                                                        <li><a href="">Marker</a></li>
+                                                        <li><a href="">Qayçı </a></li>
+                                                        <li><a href="">Qovluq</a></li>
+                                                        <li><a href="">Skripka</a></li>
+                                                        <li><a href="">Yazı lövhəsi</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Bıçaq</a></li>
+                                                        <li><a href="">Bloknot</a></li>
+                                                        <li><a href="">Pul Rezini</a></li>
+                                                        <li><a href="">Çərçivə</a></li>
+                                                        <li><a href="">Delgəc</a></li>
+                                                        <li><a href="">Dəftər</a></li>
+                                                        <li><a href="">Kağız</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Kalkulyator</a></li>
+                                                        <li><a href="">Qayçı</a></li>
+                                                        <li><a href="">Qeyd Kağızı</a></li>
+                                                        <li><a href="">Qələm</a></li>
+                                                        <li><a href="">Qısqac</a></li>
+                                                        <li><a href="">Qovluq</a></li>
+                                                        <li><a href="">Sənəd Dolabı</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Sənəd Rəfi</a></li>
+                                                        <li><a href="">Skoç</a></li>
+                                                        <li><a href="">Skrepka</a></li>
+                                                        <li><a href="">Stepler və ehtiyatları</a></li>
+                                                        <li><a href="">Xətkeş</a></li>
+                                                        <li><a href="">Yapışqan</a></li>
+                                                        <li><a href="">Zibil Qabı</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list2"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786311qida.png" alt="Qida və İçkilər"><a href="">Qida və içkilər</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list2 ">
+                                                    <ul>
+                                                        <li><a href="">Çay</a></li>
+                                                        <li><a href="">Ədviyyat</a></li>
+                                                        <li><a href="">Qəhvə</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Qənd</a></li>
+                                                        <li><a href="">Quru meyvə</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Şirniyyat</a></li>
+                                                        <li><a href="">Soyuq İçkilər</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Süd</a></li>
+                                                        <li><a href="">Un məhsulları</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list3" ><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786118xirdavat.png" alt="Təsərrüfat malları"><a href="">Təsarrüfat malları</a></div>
+                                                <div class="border-div1"></div>
+                                                <div  class="catolog-list3 ">
+                                                    <ul>
+                                                        <li><a href="">Birdəfəlik qablar</a></li>
+                                                        <li><a href="">Əlcək</a></li>
+                                                        <li><a href="">Hava təravətləndirici</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Mətbəx levazimatlari</a></li>
+                                                        <li><a href="">Sabun</a></li>
+                                                        <li><a href="">Salfetlər</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Təmizlik Vasitələri</a></li>
+                                                        <li><a href="">Tibbi ləvazimatlar</a></li>
+                                                        <li><a href="">Tualet kağızı</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Xırdavat</a></li>
+                                                        <li><a href="">Zibil Paketi</a></li>
+                                                        <li><a href="">Mətbəx Dəsmalı</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list4"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1617786259computer-accessories-512.webp" alt="Elektron avadanlıq"><a href="">Elektron avadanlıqlar</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list4 ">
+                                                    <ul>
+                                                        <li><a href="">Batareyalar</a></li>
+                                                        <li><a href="">Kartric</a></li>
+                                                        <li><a href="">Klaviatura</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Kompyuter üçün çanta</a></li>
+                                                        <li><a href="">Modem</a></li>
+                                                        <li><a href="">Mouse</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Power Bank</a></li>
+                                                        <li><a href="">Printer</a></li>
+                                                        <li><a href="">Telefon</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Təmizləyicilər</a></li>
+                                                        <li><a href="">Uzadıcı</a></li>
+                                                        <li><a href="">Yaddaş kart</a></li>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list5"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/16468163995165161.png" alt="Dibçək gülləri"><a href="">Dibçək gülləri</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list5 ">
+                                                    <ul>
+                                                        <li><a href="">Aksesuarlar</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Otaq gülləri</a></li>
+                                                    </ul>
+                                                    <ul>
+
+                                                    </ul>
+                                                    <ul>
+
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list6"> <div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/1618572764fbdfbdf.jpg" alt="Hədiyyəlik"><a href="">Hədiyyəlik</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list6 ">
+                                                    <ul>
+                                                        <li><a href="">Cüzdan</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Masaüstü dəstləri</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                    </ul>
+                                                    <ul>
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                            <li class="office-list7"><div class=" d-flex align-items-center mb-1"><img src="https://www.los.az/public/CatImgs/162151268599956.png" alt="Coffee shop"><a href="">Coffee shop</a></div>
+                                                <div class="border-div1"></div>
+                                                <div class="catolog-list7 ">
+                                                    <ul>
+                                                        <li><a href="">Mondo</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Qəhvə bişirənlər</a></li>
+                                                    </ul>
+                                                    <ul>
+                                                        <li><a href="">Qəhvə kapsullar</a></li>
+                                                    </ul>
+                                                    <ul>
+                                    
+                                                    </ul>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    
+                                </div>
+                        </div>
+                    </div>
+                    <div class="col-8 nav-menu d-flex  py-3">
+                        <div class="d-flex w-100  justify-content-between align-items-center">
+                            <div class=""></div>
+                            <div class="navbar-input  ">
+                                <input placeholder="Axtar" type="text">
+                                <i id="navSearch" class="fa fa-search search"></i>
+                            </div>
+                            <div class="navbar-icon">
+                                <a href="">
+                                    <i class="	fa fa-user-alt mr-2"></i>
+                                </a>
+                                <a href="">
+                                    <img src="https://www.los.az/lucky/images/general/cart.svg" alt="">
+                                    <div class="icon-number">0</div>
+                                </a>
+                                <a href="">
+                                    <img src="https://www.los.az/lucky/images/general/heart.svg" alt="">
+                                    <div class="icon-number-like">0</div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class=" header-layer-menu d-flex flex-wrap">
+                
+            </div>
+
+            <!-- =================== navbar // ================= -->
+
+            <!-- =================== usur-component ================= -->
+
+            <div class="usur-component">
+                <div class="container">
+                    <div class="user-comp mb-5">
+                        <div class=" office-comp-text my-5">
+                            <h1>Sifarişlərim</h1>
+                            <div class="text-bor"></div>
+                            <p>Ana səhifə / Sifarişlərim</p>
+                        </div>
+                        <div class="d-flex flex-wrap my-4">
+                            <div class="col-6">
+                                <button id="userActiveBtn" class="user-btn user-btn-active">Fərdi sifarişlər</button>
+                            </div>
+                            <div class="col-6">
+                                <button id="userRemoveBtn" class="user-btn">Paket sifarişlər</button>
+                            </div>
+                        </div>
+
+                        <div class="user-selects">
+                            <div class="selects">
+                                <p>
+                                    Tarixə görə :
+                                </p>
+                                <select name="" id="">
+                                    <option value="">Təzədən köhnəyə</option>
+                                    <option value="">Köhnədən təzəyə</option>
+                                </select>
+                            </div>
+                            <div class="selects">
+                                <p>
+                                    Statusa görə :
+                                </p>
+                                <select name="" id="">
+                                    <option value="">hamısı</option>
+                                    <option value=""></option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <table id="UserActiveTable">
+                            <thead>
+                                <tr>
+                                    <th class="user-th-img">Şəkil</th>
+                                    <th class="user-th-name">Məhsulun adı</th>
+                                    <th class="user-th-num">Say</th>
+                                    <th class="user-th-color">Rəng</th>
+                                    <th class="user-th-cost">Qiymət</th>
+                                    <th class="user-th-hist">Tarix</th>
+                                    <th class="user-th-status">Status</th>
+                                    <th class="user-th-replay">Təkrar sifariş</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <th class="user-th-img"> <h5>Şəkil:</h5><img src="https://www.los.az/public/Products/165468794344937-9ae7866ed7d63ee716a04db5bb7b8b8a.jpg" alt=""></th>
+                                    <th class="user-th-name"><h5>Məhsulun adı:</h5> Tualet kağızı "Selpak" 4 rulon</th>
+                                    <th class="user-th-num"> <h5>Say:</h5> 2</th>
+                                    <th class="user-th-color"> <h5>Rəng:</h5> -</th>
+                                    <th class="user-th-cost"> <h5>Qiymət:</h5> 22.50 Azn</th>
+                                    <th class="user-th-hist"> <h5>Tarix:</h5> 25 Noyabr 2021</th>
+                                    <th class="user-th-status"><h5>Status:</h5> <div class="delivery">çatdırılıb</div></th>
+                                    <th class="user-th-replay"> <h5>Təkrar sifariş:</h5> <button>Təkrar sifariş</button></th>
+                                </tr>
+                            </tbody>
+                        </table>
+
+                        <table id="UserRemovTable">
+                            <thead>
+                                <tr>
+                                    <th class="user-th-img">Şəkil</th>
+                                    <th class="user-th-name">Məhsulun adı</th>
+                                    <th class="user-th-num">Say</th>
+                                    <th class="user-th-color">Rəng</th>
+                                    <th class="user-th-cost">Qiymət</th>
+                                    <th class="user-th-hist">Tarix</th>
+                                    <th class="user-th-status">Status</th>
+                                    <th class="user-th-replay">Təkrar sifariş</th>
+                                </tr>
+                            </thead>
+                            <tbody >
+                                <tr>
+                                    <th class="user-th-img"> <h5>Şəkil:</h5><img src="https://www.los.az/public/Products/1628068596540540504504540540504.jpg" alt=""></th>
+                                    <th class="user-th-name"><h5>Məhsulun adı:</h5> Texmarker 'Maped' 4-lü</th>
+                                    <th class="user-th-num"> <h5>Say:</h5> 5</th>
+                                    <th class="user-th-color"> <h5>Rəng:</h5> -</th>
+                                    <th class="user-th-cost"> <h5>Qiymət:</h5> 18.50 Azn</th>
+                                    <th class="user-th-hist"> <h5>Tarix:</h5> 1 Noyabr 2021</th>
+                                    <th class="user-th-status"><h5>Status:</h5> <div class="delivery">çatdırılıb</div></th>
+                                    <th class="user-th-replay"> <h5>Təkrar sifariş:</h5> <button>Təkrar sifariş</button></th>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =================== usur-component // ================= -->
+
+            <!-- =============== footer =============== -->
+            
+            <div class="footer-component">
+                <div class="container">
+                    <div class="footer">
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 footer-logo">
+                            <div class="logo">
+                                <a href="index.html"><img src="img/logo-footer.png" alt=""></a>
+                                <div class="d-flex justify-content-center mt-3">
+                                    <a href="https://www.facebook.com/people/Lucky-Office-Support/100066688792341/"><i class="fa fa-facebook"></i></a>
+                                    <a href="https://www.instagram.com/lucky_office_support/?hl=ru"><i class="fa fa-instagram"></i></a>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 footer-list">
+                            <div class="">
+                                <h6>Kateqoriyalar</h6>
+                                <ul>
+                                    <li><a href="office-comp.html">Ofis ləvazimatları
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Qida və İçkilər
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Təsərrüfat malları
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Elektron avadanlıq
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Dibçək gülləri
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Hədiyyəlik
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="office-comp.html">Coffee shop
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 footer-list">
+                            <div class="">
+                                <h6>Menyular</h6>
+                                <ul>
+                                    <li><a href="about.html">Haqqımızda
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="trems-delivery.html">Çatdırılma
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="trems-return.html">Geri qaytarılma və dəyişdirmə
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                    <li><a href="contact.html">Əlaqə
+                                    <div class="border-div"></div>
+                                    </a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-3 col-md-6 col-12 mb-4 footer-list">
+                            <div class="">
+                                <h6>Əlaqə</h6>
+                                <p>Tel.:(994) 99 832 07 77</p>
+                                <p>E-mail:info@los.az</p>
+                                <p>Ünvan:Ziya Bünyadov pr, 1965. Çinar Park Biznes Mərkəzi</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="footer-bottom">
+                        <p>© Bütün huquqlar qorunur - <a href="">Lucky Office Support</a></p>
+                        <p>Powered by <a href="">Proton.az</a></p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- =============== footer //=============== -->
+
+            <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-up "></i></button>
+
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <!-- <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script> -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="js/main.js"></script>
+    </body>
+</html>
