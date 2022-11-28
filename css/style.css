@@ -404,7 +404,9 @@ a:hover {
     width: 650px;
     box-shadow: 1px 1px 1px 0px #b8b8b8;
     height: 105%;
-    background-color: white;
+    background-color: white;    
+    overflow: auto;
+
 }
 
 .office-list:hover .catolog-list{

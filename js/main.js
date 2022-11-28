@@ -31,28 +31,6 @@ $(document).ready(function () {
 
     
 
-    // alert(btnActive.length)
-    // let btnActive = [$(".btn-like")]
-    // let btnRemove = [$(".btn-like-pro")]
-
-    
-    // for( let i = 0; i < $(".btn-like").length; i++){
-    //     $(`#btn-like${i}`).click(function(){ 
-    //         console.log()
-    //         ingener += 1
-    //         $(`#btn-like-pro${i}`).css("display", "block");
-    //         $(`#btn-like${i}`).css("display", "none");
-    //         $(".icon-number-like").text(ingener);
-    //     })
-    
-    //     $(`#btn-like-pro${i}`).click(function(){
-    //         ingener -= 1
-    //         $(`#btn-like-pro${i}`).css("display", "none");
-    //         $(`#btn-like${i}`).css("display", "block");  
-    //         $(".icon-number-like").text(ingener);
-
-    //     })
-    // }
 
     let numText = 1
     $("#more-btn").click(function(){
@@ -169,6 +147,8 @@ $(document).ready(function () {
 
 
   let part = data;
+  // localStorage.setItem("part", JSON.stringify(partt))
+  // let part = JSON.parse(localStorage.getItem("partt"));
   // let part2 = data2;
   let partData = $(".office-box-home")
   let partData2 = $(".office-box-home2")
@@ -468,9 +448,10 @@ $(document).ready(function () {
 
         
       )
-      let c = 0
 
       $(`#thActiveBtn${i}`).click(function(){
+        ingener -= 1
+        $(".icon-number").text(ingener)
         $(`#thActiveBtn${i}`).parents("tr").remove();
         $(`#OrderCostSpan`).text("0.00")
       })
@@ -478,6 +459,8 @@ $(document).ready(function () {
       $(`#thRemoveBtn${i}`).click(function(){
         $(`#thRemoveBtn${i}`).parents("tr").remove();
         $(`#OrderCostSpan`).text("0.00")
+        ingener -= 1
+        $(".icon-number").text(ingener)
       })
 
       let a = part[i].cost;
@@ -502,12 +485,13 @@ $(document).ready(function () {
         }
       })
 
-      $(`#OrderCostSpan`).text( $(`#costSpan${i}`).text())
+      $(`#OrderCostSpan`).text($(`#costSpan${i}`).text())
 
-    localStorage.setItem('items',JSON.stringify(part))  
+    localStorage.setItem('items',JSON.stringify(part)) 
+     
+    console.log(part)
       
     });
-
     
   }
 
